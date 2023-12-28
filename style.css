@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+input, button {
+    margin: 10px 0;
+}
+
+button.styled-button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button.styled-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+button.edit {
+    color: lightblue;
+}
+
+button.remove {
+    color: red;
+}
+
+#itemsTable {
+    width: 100%;
+    text-align: left;
+}
+
+#itemsTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* CSS */
+#spinnerContainer {
+    position: relative;
+    width: 200px; /* same as spinner */
+    height: 200px; /* same as spinner */
+    margin: 0 auto; /* center the container */
+}
+
+#spinner {
+    border-radius: 50%;
+}
+
+#chosenItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid #000; /* adjust as needed */
+    background-color: #fff; /* adjust as needed */
+    font-size: 20px; /* adjust as needed */
+    display: flex; /* new */
+    justify-content: center; /* new */
+    align-items: center; /* new */
+    padding: 10px; /* new */
+    box-sizing: border-box; /* new */
+    white-space: nowrap; /* new */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* new */
+    transition: all 0.3s ease; /* new */
+    border-radius: 10px; /* new */
+}
+
+#newItemInput {
+    width: 80%; /* adjust as needed */
+    padding: 10px; /* adjust as needed */
+    border: 2px solid #000; /* adjust as needed */
+    border-radius: 5px; /* adjust as needed */
+    font-size: 16px; /* adjust as needed */
+    transition: all 0.3s ease; /* new */
+    outline: none; /* new */
+    flex-grow: 1;
+    margin-right: 10px;
+    padding-right: 30px;
+}
+
+#inputContainer {
+    position: relative;
+    display: flex; /* new */
+    justify-content: center; /* new */
+    align-items: center; /* new */
+    width: 80%;
+    margin: 0 auto;
+}
+
+#newItemInput:focus {
+    border-color: #343536; /* new */
+    box-shadow: 0 0 25px #4d4e4f; /* new */
+    flex-grow: 1; /* new */
+    margin-right: 10px; /* new */
+    padding-right: 30px;
+}
+
+#addItemButton {
+    position: absolute; /* new */
+    right: 25px; 
+    cursor: pointer; /* Makes the icon act like a button */
+    font-size: 24px; /* Adjust as needed */
+    color: #000; /* Adjust as needed */
+}
+
+#startButton {
+    background-color: #151617; /* Blue background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 12px 24px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s; /* Transition effect */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+}
+
+#startButton:hover {
+    background-color: #3c3d3e; /* Darker blue */
+    color: white; /* White text */
+}
+
+#startButton:active {
+    background-color: #dfe1e3; /* Even darker blue */
+}
+
+#popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popupContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+#closePopupButton {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #000000; 
+    color: #fff; /* Change the text color */
+    font-size: 16px; /* Change the font size */
+    cursor: pointer; /* Change the cursor to a hand */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add a transition effect */
+}
+
+#closePopupButton:hover {
+    background-color: #535556; 
+}
+
+h1 {
+    text-align: center; /* Center the text */
+    color: #111e2b; /* Change the text color */
+    font-family: 'Arial', sans-serif; /* Change the font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+    font-size: 2.5em; /* Increase the font size */
+    margin-bottom: 50px; /* Add some space below the heading */
+}
